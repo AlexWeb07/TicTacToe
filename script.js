@@ -3,7 +3,9 @@ var pl1="";
 var pl2="";
 function handleLoad(){
     pl1=prompt("Enter your name:");
+    pl1=pl1.substring(0, pl1.indexOf(' '));
     pl2=prompt("Enter your opponent name:");
+    pl2=pl2.substring(0, pl2.indexOf(' '));
     if(pl1=="" || pl2==""){
         alert("Enter valid name!");
         location.reload();
@@ -51,8 +53,8 @@ function handleClick(id){
     }
 }
 function reStart(){
-    x=true;
     restart.style.display="none";
+
     p1=document.getElementById("p1").style.pointerEvents="all";
     p2=document.getElementById("p2").style.pointerEvents="all";
     p3=document.getElementById("p3").style.pointerEvents="all";
