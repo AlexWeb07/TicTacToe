@@ -54,7 +54,7 @@ function handleClick(id){
 }
 function reStart(){
     restart.style.display="none";
-
+    x=true;
     p1=document.getElementById("p1").style.pointerEvents="all";
     p2=document.getElementById("p2").style.pointerEvents="all";
     p3=document.getElementById("p3").style.pointerEvents="all";
