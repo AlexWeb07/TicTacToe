@@ -61,9 +61,6 @@ b{
     user-select: none;
     
 }
-.container p:hover{
-    background-color: rgb(0, 8, 160);
-}
 .result{
     width: 400px;
     height: 160px;
