@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body onload="handleLoad()">
+    <div class="header">
+        <div class="playerDetails">
+            <h6 id="pl1"></h6>
+            <h6 id="pl2"></h6>
+        </div>
+        <button id="chPlName" onclick="handleChange()">Change Player Name</button>
+    </div>
+    <div class="container">
+        <div class="box">
+            <p id="p1" onclick="handleClick('p1')"></p>
+        </div>
+        <div class="box">
+            <p id="p2" onclick="handleClick('p2')"></p>
+        </div>
+        <div class="box">
+            <p id="p3" onclick="handleClick('p3')"></p>
+        </div>
+        <div class="box">
+            <p id="p4" onclick="handleClick('p4')"></p>
+        </div>
+        <div class="box">
+            <p id="p5" onclick="handleClick('p5')"></p>
+        </div>
+        <div class="box">
+            <p id="p6" onclick="handleClick('p6')"></p>
+        </div>
+        <div class="box">
+            <p id="p7" onclick="handleClick('p7')"></p>
+        </div>
+        <div class="box">
+            <p id="p8" onclick="handleClick('p8')"></p>
+        </div>
+        <div class="box">
+            <p id="p9" onclick="handleClick('p9')"></p>
+        </div>
+    </div>
+    <div class="result">
+        <p id="res"></p>
+        <button id="restart" onclick="reStart()">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
