@@ -51,6 +51,21 @@ function handleClick(id){
         p8=document.getElementById("p8").style.pointerEvents="none";
         p9=document.getElementById("p9").style.pointerEvents="none";
     }
+    else if(p1!="" && p2!="" && p3!="" && p4!="" && p5!="" && p6!="" && p7!="" && p8!="" && p9!="")
+    {
+        restart.style.display="inline";
+        document.getElementById("res").innerHTML="It's a tie!!";
+        p1=document.getElementById("p1").style.pointerEvents="none";
+        p2=document.getElementById("p2").style.pointerEvents="none";
+        p3=document.getElementById("p3").style.pointerEvents="none";
+        p4=document.getElementById("p4").style.pointerEvents="none";
+        p5=document.getElementById("p5").style.pointerEvents="none";
+        p6=document.getElementById("p6").style.pointerEvents="none";
+        p7=document.getElementById("p7").style.pointerEvents="none";
+        p8=document.getElementById("p8").style.pointerEvents="none";
+        p9=document.getElementById("p9").style.pointerEvents="none";
+        
+    }
 }
 function reStart(){
     restart.style.display="none";
