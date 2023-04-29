@@ -4,7 +4,7 @@ var pl2="";
 function handleLoad(){
     pl1=prompt("Enter your name:");
     pl2=prompt("Enter your opponent name:");
-    if(pl1=="" || pl2=="");
+    if(pl1=="" || pl2=="")
     {
         alert("Enter valid name!!");
         location.reload();
