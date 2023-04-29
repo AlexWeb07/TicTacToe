@@ -4,6 +4,12 @@ var pl2="";
 function handleLoad(){
     pl1=prompt("Enter your name:");
     pl2=prompt("Enter your opponent name:");
+    if(pl1=="" || pl2=="");
+    {
+        alert("Enter valid name!!");
+        location.reload();
+    }
+    alert(pl1+"'s first turn!!");
     document.getElementById("pl2").innerHTML=pl2+": ×";
     document.getElementById("pl1").innerHTML=pl1+": ○";
 }
