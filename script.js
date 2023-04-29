@@ -3,13 +3,7 @@ var pl1="";
 var pl2="";
 function handleLoad(){
     pl1=prompt("Enter your name:");
-    pl1=pl1.substring(0, pl1.indexOf(' '));
     pl2=prompt("Enter your opponent name:");
-    pl2=pl2.substring(0, pl2.indexOf(' '));
-    if(pl1=="" || pl2==""){
-        alert("Enter valid name!");
-        location.reload();
-    }
     document.getElementById("pl2").innerHTML=pl2+": ×";
     document.getElementById("pl1").innerHTML=pl1+": ○";
 }
