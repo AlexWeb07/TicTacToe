@@ -9,9 +9,11 @@ function handleLoad(){
         alert("Enter valid name!!");
         location.reload();
     }
-    alert(pl1+"'s first turn!!");
+    else{
+        alert(pl1+"'s first turn!!");
     document.getElementById("pl2").innerHTML=pl2+": ×";
     document.getElementById("pl1").innerHTML=pl1+": ○";
+    }
 }
 function handleClick(id){
     x=!x;
